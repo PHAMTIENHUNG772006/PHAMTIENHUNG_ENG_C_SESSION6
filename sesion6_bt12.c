@@ -1,19 +1,24 @@
-#include <stdio.h>
-long long fibonacci(int n) {
-    if (n <= 1) {
-        return n; 
-    }
-    return fibonacci(n - 1) + fibonacci(n - 2); 
-}
-int main() {
-    int n;
-    printf("nhap so phan tu day Fibonacci: ");
-    scanf("%d", &n);
-    printf("day Fibonacci gom %d phan tu: \n", n);
-    for (int i = 0; i < n; i++) {
-        printf("%lld ", fibonacci(i)); 
-    }
+#include<stdio.h>
+int main(){
 
-    return 0;
+int a = 0, b = 1, n;
+printf(" moi ban nhap n fibonacci can tim :");
+scanf("%d", n);
+printf("day fibonacci %d so gom", n);
+for(i=1;i<=n;i++){
+	if(i==1){
+		printf("%d", a);
+		
+	} else if {
+	printf("%d", b);	
+	} else{
+		n = a + b;
+		printf("%d", n);
+		a=b;
+		b=n;
+	}
+}
+printf("\n");
+return 0;
 }
 
